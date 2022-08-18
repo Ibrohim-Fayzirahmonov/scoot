@@ -18,6 +18,7 @@
     padding: 100px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sign__title {
@@ -33,4 +34,29 @@
 .sign__img--box {
     display: flex;
     column-gap: 20px;
+}
+
+
+@media screen and (max-width:992px) {
+
+    .sign__body {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+
+    .sign__title {
+        text-align: center;
+    }
+
+    .sign__img {
+       height: 40px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .sign__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
 }
