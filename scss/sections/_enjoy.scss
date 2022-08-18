@@ -1,0 +1,128 @@
+.enjoy {
+    padding: 160px 0;
+}
+
+.enjoy__body {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 974px;
+        height: 15px;
+        left: -165px;
+        top: 40px;
+        background-color: #E5ECF4;
+        z-index: -1;
+    }
+}
+
+.enjoy__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enjoy__img {
+    margin-bottom: 40px;
+}
+
+.enjoy__box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+}
+
+.enjoy__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+.enjoy__text {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 350px;
+    color: #939CAA;
+}
+
+@media screen and (max-width:992px) {
+    .enjoy {
+        padding: 0;
+    }
+
+    .enjoy__body::before {
+        height: 540px;
+        width: 15px;
+        left: 100px;
+        top: 0;
+
+    }
+
+    .enjoy__list {
+        margin-left: 60px;
+        flex-direction: column;
+        padding-top: 120px;
+        row-gap: 40px;
+    }
+
+    .enjoy__item {
+        display: flex;
+        align-items: center;
+        column-gap: 80px;
+    }
+
+    .enjoy__img {}
+
+    .enjoy__box {}
+
+    .enjoy__subtitle {}
+
+    .enjoy__text {}
+}
+
+@media screen and (max-width:767px) {
+    .enjoy {}
+
+
+    .enjoy__body {
+        &::before {
+            display: none;
+        }
+    }
+
+    .enjoy__list {
+        margin: 0;
+        row-gap: 48px;
+    }
+
+    .enjoy__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+    .enjoy__img {
+        width: 56px;
+        margin-bottom: 0;
+    }
+
+    .enjoy__box {
+        row-gap: 24px;
+    }
+
+    .enjoy__subtitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .enjoy__text {
+        text-align: center;
+    }
+}

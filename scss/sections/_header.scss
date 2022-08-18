@@ -1,0 +1,137 @@
+.header__body {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.header__link--logo {
+    width: 110px;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.header__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.header__btn {
+    padding: 15px 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    background: #FCB72B;
+    color: #FFFFFF;
+}
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger {
+    width: 20px;
+    height: 4px;
+    background: #FCB72B;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background: #FCB72B;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-7px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(7px);
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.menu-btn {
+    display: none;
+}
+
+
+
+@media screen and (max-width:992px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .header__body {
+        justify-content: inherit;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .header__box {
+        margin: 0 auto;
+    }
+
+    .header__link--logo {
+        width: 75px;
+    }
+
+    .header__logo {
+        width: 75px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+}

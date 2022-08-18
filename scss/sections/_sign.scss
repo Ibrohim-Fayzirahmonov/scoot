@@ -1,0 +1,36 @@
+.sign {
+    background: #495567;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 990px;
+        height: 150px;
+        bottom: 0;
+        right: 0;
+        background: url(/img/Group22.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.sign__body {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign__title {
+    max-width: 415px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+
+.sign__img--box {
+    display: flex;
+    column-gap: 20px;
+}
