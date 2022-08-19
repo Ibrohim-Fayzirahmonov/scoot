@@ -10,7 +10,7 @@
         position: absolute;
         width: 974px;
         height: 15px;
-        left: -165px;
+        right: 300px;
         top: 40px;
         background-color: #E5ECF4;
         z-index: -1;
@@ -60,7 +60,7 @@
         height: 540px;
         width: 15px;
         left: 100px;
-        top: 0;
+        top: -20px;
 
     }
 
@@ -76,19 +76,9 @@
         align-items: center;
         column-gap: 80px;
     }
-
-    .enjoy__img {}
-
-    .enjoy__box {}
-
-    .enjoy__subtitle {}
-
-    .enjoy__text {}
 }
 
 @media screen and (max-width:767px) {
-    .enjoy {}
-
 
     .enjoy__body {
         &::before {

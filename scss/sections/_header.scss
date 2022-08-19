@@ -3,7 +3,7 @@ header {
     top: 0;
     width: 100%;
     background: #FFFFFF;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__body {
@@ -35,6 +35,14 @@ header {
     font-size: 15px;
     line-height: 25px;
     color: #939CAA;
+
+    &:hover {
+        color: #FCB72B;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
 }
 
 .header__btn {
@@ -46,6 +54,19 @@ header {
     text-align: center;
     background: #FCB72B;
     color: #FFFFFF;
+    border: 3px solid #FCB72B;
+
+    &:hover {
+        background-color: white;
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+
+    &:active {
+        opacity: 0.7;
+        background: #FCB72B;
+        color: #FFFFFF;
+    }
 }
 
 

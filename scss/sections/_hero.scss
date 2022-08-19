@@ -4,7 +4,7 @@
     position: relative;
     background-position: center;
     padding-top: 60px;
-margin-top: 80px;
+    margin-top: 80px;
 }
 
 .hero__body {
@@ -69,11 +69,23 @@ margin-top: 80px;
     background: #FCB72B;
     color: #FFFFFF;
     margin-left: 95px;
+    border: 3px solid #FCB72B;
+
+    &:hover {
+        background: url(/img/back.png);
+        border: 3px solid #FCB72B;
+        color: #FCB72B;
+    }
+
+    &:active {
+        opacity: 0.7;
+        background: #FCB72B;
+        color: #FFFFFF;
+    }
 }
 
 @media screen and (max-width:992px) {
     .hero__body {
-        background-position: center;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -111,6 +123,16 @@ margin-top: 80px;
 }
 
 @media screen and (max-width:720px) {
+    .hero {
+        margin-top: 60px;
+        background: url(/img/Bitmap2\(1\).png);
+    }
+
+    .hero__body {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
     .hero__title {
         font-size: 40px;
         line-height: 40px;
@@ -118,5 +140,10 @@ margin-top: 80px;
 
     .hero__body::before {
         left: -350px;
+        bottom: 40px;
+    }
+
+    .hero__btn {
+        margin-bottom: 110px;
     }
 }
